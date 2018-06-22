@@ -1,0 +1,25 @@
+.btn {
+    border-radius: 40px;
+    background-color: #550569;
+    box-shadow: 0 6px 0px 0 rgba(0,0,0,0.25);
+    border:0px solid transparent; /* this was 1px earlier */
+    z-index: 1;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+
+}
+.btn img {
+    width:20px;
+    color:#f0eaf1;
+    position: relative;
+
+}
+.btn:hover, .btn.active{
+    background-color: #137A8D;
+}
+
+.gallery-top {
+    margin-top: 20px;
+}
+

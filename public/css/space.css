@@ -1,0 +1,544 @@
+/*Color Palette
+Galactic white: #f0eaf1
+Nebula Purple: #550569
+    daughter color: #7b428a;
+Drained blue: #085c84
+Alien green: #28937b
+Yellow star: #E1BA1C
+Black Hole: #181719
+*/
+@font-face{
+    font-family: "Raleway"; 
+    font-style: normal;
+    font-weight: normal;
+    src: local("Raleway"), local("Raleway-Regular"), url('https://fonts.googleapis.com/css?family=Raleway');
+}
+/*@font-face{
+    font-family: "Roboto"; 
+    font-style: normal;
+    font-weight: normal;
+    src: local("Roboto"), local("Roboto-Regular"), url('https://fonts.googleapis.com/css?family=Roboto');
+}*/
+body{
+    font-family: 'Raleway';
+    color: #181719;
+    /*background-color: #7b428a;*/
+    background: rgb(222,67,190);
+    background: linear-gradient(0deg, rgb(49, 143, 187) 0%, rgba(8, 92, 132,1) 17%, rgba(85,5,105,1) 47%, rgba(24,23,25,1) 74%, rgba(7,7,8,1) 100%);
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(40, 147, 123, .7);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+.citationText {
+    padding-left: 22px ;
+    text-indent: -22px ;
+}
+
+.citationText a {
+    color: #28937b;
+    font-weight: bold; 
+}
+.citationText button {
+    background-color: rgba(24, 23, 25);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.jumbotron  {
+    background-color: #f0eaf1;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5px;
+    border-radius: 0;
+    margin-bottom: 0;
+    height: 200px;
+    background: url("../images/homeHead.png") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+/*Navbar customizations*/
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+.navbar {
+    background-color: #f0eaf1;
+    color: #181719;
+}
+
+.nav-item a {
+    color: #181719;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+/*Changes active and hover colors of navbar links*/
+.nav-item a.active {
+    color: #E1BA1C;
+}
+.nav-item a:hover {
+    color: #7b428a;
+}
+/*Change font color for brand*/
+.navbar-brand{
+    color:#181719;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+/*changes color of hamburger menu*/
+.custom-toggler.navbar-toggler {
+    border-color: #550569;
+}
+.custom-toggler .navbar-toggler-icon { 
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(85, 5, 105, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/*Main Content Div*/
+.galacticnest {
+    background-color: #f0eaf1;
+    margin-bottom: 20px;
+
+}
+.sourcenest {
+    background-color: #f0eaf1;
+    height: 100%;
+    margin-left:0;
+}
+.profileNest    {
+    background-color: #f0eaf1;
+    height:600px;
+    text-decoration: none;
+
+}
+.nebartmargin  {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.nebmargin-top  {
+    margin-top: 45px;
+}
+.galacticnest h1 h2 h3 h4 {
+    padding: 40px;
+    letter-spacing: 3px;
+}
+
+.border {
+    color: #550569;
+    
+}
+/*CSS for images|Currently only good for the first page*/
+.nebimg  {
+    margin-bottom: 20px;
+    padding: 0;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+}
+.nebimg img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.page-header    {
+    margin-bottom: 0px;
+}
+.newsapi   p{
+    text-align: justify;
+}
+
+.planetariumoptions {
+    margin-left: 30px;
+    margin-right: 0;
+}
+.constellationtext {
+    margin-left: 100px;
+    text-align: justify;
+    color: #f0eaf1;
+}
+.constellation  {
+    margin-right: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.card  {
+    background-color: rgba(8, 92, 132, 0.75);
+    border-radius: 0%;
+}
+.card a {
+    color: #f0eaf1;
+}
+.card p {
+    color: #f0eaf1;
+}
+/*Stargaze gallery*/
+.starimg    {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.starimg img {
+    height: 800px;
+    width: 800px;
+}
+
+/*History html css*/
+/* format for the side nav, desktop/tablet only */
+#historySidenav a {
+    position: fixed;
+    left: -10px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f0eaf1;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    scroll-behavior: auto;
+    z-index: 15;
+    /* border: hotpink solid 2px; */
+}
+/* Brings the side nav out when hovered on */
+#historySidenav a:hover {
+    left: 0;
+}
+/*side nav  section styling*/
+#intro {
+    top: 200px;
+    background-color: #E1BA1C;
+}
+#beginning {
+    top: 280px;
+    background-color: #edc823;
+}
+#history {
+    top: 360px;
+    background-color: #f7d92e;
+}
+#galileo {
+    top: 440px;
+    background-color: #28937b;
+}
+#sources    {
+    top: 540px;
+    background-color: #085c84;
+}
+
+
+.historyContent {
+    margin-left: 65px;
+    margin-bottom: 70px;
+
+}
+.historyContent p {
+    text-align: justify;
+}
+.historyContent a {
+    color: #E1BA1C;
+    text-decoration: underline;
+}
+.historyContent h2,h3,h4,h5 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+mark {
+    background-color: transparent;
+    color: #E1BA1C;
+    font-weight: bold
+}
+.quest {
+    text-align: justify;
+    margin-right:50px;
+    margin-top:30px;
+    margin-left: 30px;
+    width: 100%;
+}
+/*Footer customizations*/
+.galacticfooter {
+    position: relative;
+    height: 140px;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0eaf1;
+    padding: 20px;
+    margin-top: 100px;
+    color: #E1BA1C;
+
+}
+
+div.planetResponse {
+
+    margin-left:50px;
+}
+blockquote{
+    position: relative;
+    display:block;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #f0eaf1;
+    border: solid 1px #181719;
+    margin-top:50px;  
+}
+
+.blockquote-background {
+    background: #085c84;
+    padding: 20px;
+}
+.blockquote-background footer {
+    margin-left:50px;
+}
+blockquote::before{
+    content: "\201C"; 
+    background-color: #faf9fa; 
+    border-radius: 50%;
+    width: 75px;
+    height:75px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #181719;
+    text-align: center;
+    line-height: 93px;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+}
+
+blockquote::after{
+content: "";
+}
+/*********************************************************************************/
+/***CONTACT FORM CSS***/
+form { max-width:600px; margin:50px auto; }
+
+.feedback-input {
+color:#181719;
+font-weight:500;
+font-size: 18px;
+border-radius: 5px;
+line-height: 22px;
+background-color: transparent;
+border:2px solid #E1BA1C;
+transition: all 0.3s;
+padding: 13px;
+margin-bottom: 15px;
+width:100%;
+box-sizing: border-box;
+outline:0;
+}
+.name {
+    float: left;
+    width: 45%;
+}
+.email {
+    float: right;
+    width: 45%;
+}
+.feedback-input:focus { border:2px solid #E1BA1C; }
+
+textarea {
+  height: 100px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  width: 70%;
+  background:#E1BA1C;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#085c84; }
+/***END CONTACT FORM CSS***/
+/*****************************************************************************************/
+
+@media(max-width: 1024px)   {
+
+    .planetarium   {
+        margin-top:0;
+    }
+    .constellation img{
+        margin-right: 25px;
+        margin-left: 0;
+        width: 312px;
+        height: 312px;
+    }
+    .constellationtext {
+        margin-left: 0px;
+    }
+    div.planetResponse {
+
+        margin-left:0;
+    }
+    .hidesmol {
+        visibility: hidden;
+        height: 20px;
+    }
+    .sidenav {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .historyContent {
+        margin-left:0;
+    } 
+
+}
+@media(max-width: 960px)    {
+
+    .planetarium   {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .constellation img{
+        margin-right: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 212px;
+        height: 212px;
+    }
+.jumbotron {
+    visibility: hidden;
+    height: 0;
+}
+.center{
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    
+}
+blockquote {
+    margin-top: 0;
+    top: 0;
+    bottom: 500px;
+}
+
+}
+@media(max-width: 768px)    {
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nebartmargin {
+        margin-left: 0;
+    }
+    .planetarium   {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .constellation img{
+        margin-right: auto;
+        margin-left: 0;
+        width: 312px;
+        height: 312px;
+    }
+    .constellationtext {
+        margin-left: 0px;
+    }
+    .quest li {
+        margin-right:15px;
+    }
+    .name {
+        float: none;
+        width: 100%;
+    }
+    .email {
+        float: none;
+        width: 100%;
+    }
+
+}
+@media(max-width: 400px)    {
+    .constellation img{
+        margin-right: auto;
+        margin-left: auto;
+        width: 280px;
+        height: 280px;
+    }
+    .quest li {
+        margin-right:15px;
+    }
+    .starimg {
+        height:350px;
+        width: 350px;
+    }
+    blockquote {
+        margin-top: 0;
+    }
+}
+@media(max-width: 360px)    {
+    .constellation img{
+        margin-right: 10px;
+        margin-left: auto;
+        width: 260px;
+        height: 260px;
+    }
+    .starimg {
+        height:330px;
+        width: 330px;
+    }
+}
+@media(max-width: 330px)    {
+    .constellation img{
+        margin-right: auto;
+        margin-left: auto;
+        width: 200px;
+        height: 200px;
+    }
+    .starimg {
+        height:300px;
+        width: 300px;
+        margin-left: 0;
+    }
+}
+
+
